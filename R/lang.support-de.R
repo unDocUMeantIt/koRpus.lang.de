@@ -42,9 +42,8 @@
 #' @export
 #' @importFrom koRpus set.lang.support
 #' @examples
-#' \dontrun{
 #' lang.support.de()
-#' }
+
 lang.support.de <- function(...) {
   koRpus::set.lang.support("treetag",
     list("de"=list(
