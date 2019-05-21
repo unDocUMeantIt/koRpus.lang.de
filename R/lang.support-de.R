@@ -67,7 +67,7 @@ lang.support.de <- function(...) {
               TT.lookup         = TT.lookup,
               TT.filter         = TT.filter,
 
-              TT.tknz.opts      = paste("-a", TT.abbrev),
+              TT.tknz.opts      = c(),
               TT.lookup.command = paste("perl", TT.lookup, TT.lexicon, "|"),
               TT.filter.command = paste("|", TT.filter)
             )
@@ -84,7 +84,7 @@ lang.support.de <- function(...) {
               TT.lookup         = c(),
               TT.filter         = c(),
 
-              TT.tknz.opts      = paste("-a", TT.abbrev),
+              TT.tknz.opts      = c(),
               TT.lookup.command = c(),
               TT.filter.command = c()
             )
