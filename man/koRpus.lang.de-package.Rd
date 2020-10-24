@@ -2,30 +2,36 @@
 % Please edit documentation in R/koRpus.lang.de-package.R
 \docType{package}
 \name{koRpus.lang.de-package}
+\alias{koRpus.lang.de}
 \alias{koRpus.lang.de-package}
-\title{The koRpus.lang.de Package}
+\title{\packageTitle{koRpus.lang.de}}
 \description{
-Language Support for 'koRpus' Package: German.
+\packageDescription{koRpus.lang.de}
 }
 \details{
+The DESCRIPTION file:
 \tabular{ll}{
 Package: \tab koRpus.lang.de\cr
 Type: \tab Package\cr
 Version: \tab 0.1-2\cr
-Date: \tab 2018-03-02\cr
+Date: \tab 2020-10-24\cr
 Depends: \tab R (>= 3.1),koRpus (>= 0.11-2)\cr
 Encoding: \tab UTF-8\cr
 License: \tab GPL (>= 3)\cr
 LazyLoad: \tab yes\cr
 URL: \tab https://reaktanz.de/?c=hacking&s=koRpus\cr
 }
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://reaktanz.de/?c=hacking&s=koRpus}
+  \item Report bugs at \url{https://github.com/unDocUMeantIt/koRpus.lang.de/issues}
+}
 
-Adds support for the German language to the 'koRpus' package. To ask for help, report
-bugs, suggest feature improvements, or discuss the global development of the package,
-      please
-consider subscribing to the koRpus-dev mailing list (<http://korpusml.reaktanz.de>).
 }
 \author{
-Meik Michalke
+\packageAuthor{koRpus.lang.de}
+
+Maintainer: \packageMaintainer{koRpus.lang.de}
 }
-\keyword{package}

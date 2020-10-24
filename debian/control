@@ -10,10 +10,11 @@ Homepage: https://reaktanz.de/?c=hacking&s=koRpus
 Package: r-other-undocumeantit-korpus.lang.de
 Architecture: all
 Section: gnu-r
-Depends: r-base-core (>= 3.4.0), r-cran-korpus (>= 0.11-2) | r-other-reaktanz-korpus (>= 0.11-2), r-cran-sylly.de | r-other-reaktanz-sylly.de | r-other-undocumeantit-sylly.de
+Depends: r-base-core (>= 4.0.0), r-api-4.0, r-cran-korpus (>= 0.11-2) | r-other-reaktanz-korpus (>= 0.11-2), r-cran-sylly.de | r-other-reaktanz-sylly.de |
+ r-other-undocumeantit-sylly.de
 Description: GNU R package "Language Support for 'koRpus' Package: German"
  .
  Adds support for the German language to the 'koRpus' package. To ask for help, report bugs, suggest feature improvements, or discuss the global development of the package, please
- consider subscribing to the koRpus-dev mailing list (<http://korpusml.reaktanz.de>).
+ consider subscribing to the koRpus-dev mailing list (<https://korpusml.reaktanz.de>).
 Homepage: https://reaktanz.de/?c=hacking&s=koRpus
 Suggests:

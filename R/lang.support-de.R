@@ -1,4 +1,4 @@
-# Copyright 2010-2018 Meik Michalke <meik.michalke@hhu.de>
+# Copyright 2010-2020 Meik Michalke <meik.michalke@hhu.de>
 #
 # This file is part of the R package koRpus.lang.de.
 #
@@ -51,18 +51,20 @@ lang.support.de <- function(...) {
       lang="de",
       encoding="UTF-8",
       preset=function(TT.cmd, TT.bin, TT.lib, unix.OS){
-        TT.abbrev  <- file.path(TT.lib, "german-abbreviations-utf8")
-        TT.lexicon <- file.path(TT.lib, "german-lexicon-utf8.txt")
-        TT.lookup  <- file.path(TT.cmd, "lookup.perl")
-        TT.filter  <- file.path(TT.cmd, "filter-german-tags")
+        TT.tokenizer  <- file.path(TT.cmd, "utf8-tokenize.perl")
+        TT.abbrev     <- file.path(TT.lib, "german-abbreviations")
+        TT.params     <- file.path(TT.lib, "german.par")
+        TT.lexicon    <- file.path(TT.lib, "german-lexicon.txt")
+        TT.lookup     <- file.path(TT.cmd, "lookup.perl")
+        TT.filter     <- file.path(TT.cmd, "filter-german-tags")
         if(isTRUE(unix.OS)){
           # preset for unix systems
           return(
             list(
-              TT.tokenizer      = file.path(TT.cmd, "utf8-tokenize.perl"),
+              TT.tokenizer      = TT.tokenizer,
               TT.tagger         = file.path(TT.bin, "tree-tagger"),
               TT.abbrev         = TT.abbrev,
-              TT.params         = file.path(TT.lib, "german-utf8.par"),
+              TT.params         = TT.params,
               TT.lexicon        = TT.lexicon,
               TT.lookup         = TT.lookup,
               TT.filter         = TT.filter,
@@ -76,10 +78,10 @@ lang.support.de <- function(...) {
           # preset for windows systems
           return(
             list(
-              TT.tokenizer      = file.path(TT.cmd, "utf8-tokenize.perl"),
+              TT.tokenizer      = TT.tokenizer,
               TT.tagger         = file.path(TT.bin, "tree-tagger.exe"),
               TT.abbrev         = TT.abbrev,
-              TT.params         = file.path(TT.lib, "german-utf8.par"),
+              TT.params         = TT.params,
               TT.lexicon        = c(),
               TT.lookup         = c(),
               TT.filter         = c(),
